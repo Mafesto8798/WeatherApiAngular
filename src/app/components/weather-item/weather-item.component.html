@@ -1,0 +1,8 @@
+<div *ngIf="period" class="weather-item">
+  <h4>{{ period.name }}</h4>
+  <img src="{{ period.icon }}" alt="" />
+  <p>{{ period.temperature }}°{{ period.temperatureUnit }}</p>
+  <p style="font-size: 0.6em; text-align: center; white-space: wrap">
+    <strong>Forecast: </strong>{{ period.detailedForecast }}
+  </p>
+</div>
